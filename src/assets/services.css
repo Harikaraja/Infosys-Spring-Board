@@ -1,0 +1,65 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 3px; /* 5px rounded corners */
+    width: 350px;
+    height: 490px;
+    width: calc(33.33% - 5rem);
+    margin-left: 4rem;  
+    margin-bottom: 5rem;
+
+}
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+  img {
+    border-radius: 5px 5px 0 0;
+    
+  }
+
+  .storage{
+    margin: 4rem;
+    display: flex;  
+    flex-wrap: wrap;
+  }
+
+  
+
+  .container p{
+    margin: 1rem;
+  }
+
+  .hosp-contact-info{
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+  }
+
+  button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+  
+    font-weight: 600;
+    color: #e5eaf0;
+    background-color: #1b70cb;
+  
+    /* Button is inline-block element by default, it need to have block display for margin: 0 auto; to work */
+    margin: 0 auto;
+    display: block;
+  
+    /* Button is a clickable element, therefore it should have a pointer cursor */
+    cursor: pointer;
+  }
+
+button:focus,
+button:hover {
+  background-color: #93c1f5;
+  color: #050709;
+}
+
+.container center{
+    background-color: orange;
+}
+

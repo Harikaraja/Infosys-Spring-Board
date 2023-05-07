@@ -1,0 +1,26 @@
+.vision--class{
+    background-color: rgb(33, 12, 192);
+    width: 70rem;
+    height: 250px;
+    margin-left: 12%;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    color:white;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.Mission--class{
+    background-color: rgb(33, 12, 192);
+    width: 70rem;
+    height: 250px;
+    margin-left: 12%;
+    margin-top: 3rem;
+    color:white;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+h1{
+  background-color: orange;
+}

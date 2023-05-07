@@ -5,11 +5,14 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Forum from "./components/Forum";
 import Login from "./components/Login";
-
+import Branches from "./components/Branches";
 
 import "./assets/nav.css"
 import "./assets/About.css"
-
+import "./assets/services.css"
+import "./assets/Branches.css"
+import "./assets/Home.css"
+import cover from  "./assets/images/cover.jpg";
 import 
 {
   BrowserRouter as Router,
@@ -30,13 +33,36 @@ const App = ()=>{
                 
                 <Route path='/about' element={<About/>} />
                 <Route path='/services' element={<Services/>} />
+                <Route path='/branches' element={<Branches/>} />
                 <Route path='/contact' element={<Contact/>} />
                 <Route path='/forum' element={<Forum/>} />
                 <Route path='/Login' element={<Login/>} />
               </Routes>
           </Router>
           
-          
+          <img src={cover} alt="covere--image" width={100+'%'} height={550+'px'} />
+          <br/><br/><br/>
+          <center><h1>Our Vision</h1></center>
+
+          <div className="vision--class">
+            What Does Lorem Ipsum Mean? Lorem ipsum, in graphical and textual context, refers to filler text that is placed in a document or visual
+            presentation. Lorem ipsum is derived from the Latin "dolorem ipsum" roughly translated as "pain itself." Advertisements.What Does Lorem Ipsum Mean? Lorem ipsum, in graphical and textual context, 
+            refers to filler text that is placed in a document or visual
+            presentation. Lorem ipsum is derived from the Latin "dolorem ipsum" roughly translated as "pain itself." Advertisements.What Does Lorem Ipsum Mean? Lorem ipsum, in graphical and textual context, refers to
+              filler text that is placed in a document or visual
+            presentation. Lorem ipsum is derived from the Latin "dolorem ipsum" roughly translated as "pain itself." Advertisements.
+          </div>
+
+          <center><h1>Our Mision</h1></center>
+          <div className="Mission--class">
+            What Does Lorem Ipsum Mean? Lorem ipsum, in graphical and textual context, refers to filler text that is placed in a document or visual
+            presentation. Lorem ipsum is derived from the Latin "dolorem ipsum" roughly translated as "pain itself." Advertisements.What Does Lorem Ipsum Mean? Lorem ipsum, in graphical and textual context, 
+            refers to filler text that is placed in a document or visual
+            presentation. Lorem ipsum is derived from the Latin "dolorem ipsum" roughly translated as "pain itself." Advertisements.What Does Lorem Ipsum Mean? Lorem ipsum, in graphical and textual context, refers to
+              filler text that is placed in a document or visual
+            presentation. Lorem ipsum is derived from the Latin "dolorem ipsum" roughly translated as "pain itself." Advertisements.
+          </div>
+
         </>
         
     );
