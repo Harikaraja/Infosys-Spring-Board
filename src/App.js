@@ -3,9 +3,10 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
-import Forum from "./components/Forum";
+import Resources from "./components/Resources";
 import Login from "./components/Login";
 import Branches from "./components/Branches";
+import Footer from "./components/Footer";
 
 import "./assets/nav.css"
 import "./assets/About.css"
@@ -37,15 +38,33 @@ const App = ()=>{
                 <Route path='/services' element={<Services/>} />
                 <Route path='/branches' element={<Branches/>} />
                 <Route path='/contact' element={<Contact/>} />
-                <Route path='/forum' element={<Forum/>} />
+                <Route path='/resources' element={<Resources/>} />
                 <Route path='/Login' element={<Login/>} />
-
-                 
-
+               
+               
                 <Route path='/' element={
                   <>
+                    <div style={{display:'flex',flexDirection:'row',gap:'1rem',margin:'0.5rem 3rem'}}>
+                      <div className="box1" style={{background:'rgb(238,44,130)', height:'80px',width:'290px',padding:'2rem',borderRadius:'5px',}}>
+                        <p><a href="/" style={{textDecoration:'none',color:'white'}}>Book An Appointment</a></p>
+                      </div>
+                      <div className="box1" style={{background:'#1F509A', height:'80px',width:'290px',padding:'2rem',borderRadius:'5px',color:'white'}}>
+                        <p><a href="/" style={{textDecoration:'none',color:'white'}}>Video Consultation</a></p>
+                      </div>
+                      <div className="box1" style={{background:'rgb(238,44,130)', height:'80px',width:'290px',padding:'2rem',borderRadius:'5px',color:'white'}}>
+                        <p><a href="/" style={{textDecoration:'none',color:'white'}}>Submit Your Query</a></p>
+                      </div>
+                      <div className="box1" style={{background:'#1F509A', height:'80px',width:'290px',padding:'2rem',borderRadius:'5px',color:'white'}}>
+                        <p><a href="/" style={{textDecoration:'none',color:'white'}}>Find A Doctor</a></p>
+                      </div>
+                      <div className="box1" style={{background:'rgb(238,44,130)', height:'80px',width:'290px',padding:'2rem',borderRadius:'5px',color:'white'}}>
+                        <p><a href="/" style={{textDecoration:'none',color:'white'}}>Book Vaccination</a></p>
+                      </div>
+                    </div>
+                    
                     <img src={cover} alt="covereed" width={100+'%'} height={550+'px'} />
                     <br/><br/><br/>
+                    
                     <center><h1>Our  Vision</h1></center>
                     <div className="vision--class">
                       What Does Lorem Ipsum Mean? Lorem ipsum, in graphical and textual context, refers to filler text that is placed in a document or visual
@@ -90,9 +109,10 @@ const App = ()=>{
                 
 
               </Routes>
+
           </Router>
           
-         
+         <Footer/>
         </>
         
     );

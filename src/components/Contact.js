@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import doc from "../assets/images/doc.jpg";
 function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -11,19 +11,22 @@ function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} style={styles.form}>
-      <h2>Contact Us</h2>
-      <label htmlFor="name" style={styles.label}>Name</label>
-      <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} style={styles.input} required />
+    <div style={{display:'flex',flexDirection:'row'}}>
+      <img src={doc} alt='doc' height={500+'px'} style={{marginLeft:'15rem',marginTop:'4rem'}}/>
+      <form onSubmit={handleSubmit} style={styles.form}>
+        <h2>Contact Us</h2>
+        <label htmlFor="name" style={styles.label}>Name</label>
+        <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} style={styles.input} required />
 
-      <label htmlFor="email" style={styles.label}>Email</label>
-      <input type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} style={styles.input} required />
+        <label htmlFor="email" style={styles.label}>Email</label>
+        <input type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} style={styles.input} required />
 
-      <label htmlFor="message" style={styles.label}>Message</label>
-      <textarea id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} style={styles.input} required></textarea>
+        <label htmlFor="message" style={styles.label}>Message</label>
+        <textarea id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} style={styles.input} required></textarea>
 
-      <button type="submit" style={styles.button}>Send Message</button>
-    </form>
+        <button type="submit" style={styles.button}>Send Message</button>
+      </form><br/><br/>
+    </div>
   );
 }
 
@@ -38,7 +41,7 @@ const styles = {
     padding: '3rem',
     borderRadius: '1rem',
     boxShadow: '0 0.5rem 1rem rgba(0, 0, 0, 0.1)',
-    maxWidth: '500px',
+    maxWidth: '700px',
     margin: '0 auto',
     marginTop:'4%'
 

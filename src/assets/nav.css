@@ -12,11 +12,7 @@ body {
 
 }
 
- li a.active {
-
-  background-color: #fa4299;
-
-}
+ 
 .navbar {
   display: flex;
   position: relative;
